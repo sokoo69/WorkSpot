@@ -3,10 +3,15 @@
 import { Download } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
+import { toast } from "sonner";
+
 export function CsvExport({ data, filename }: { data: any[]; filename: string }) {
   
   const handleExport = () => {
-    if (!data || data.length === 0) return;
+    if (!data || data.length === 0) {
+      toast.error("No data available to export.");
+      return;
+    }
 
     const headers = Object.keys(data[0]);
     const csvContent = [
