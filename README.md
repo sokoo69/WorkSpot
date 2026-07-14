@@ -5,14 +5,9 @@
 A production-grade, full-stack booking platform built to demonstrate real-world engineering: role-based authorization, live availability via WebSockets, sandboxed payments, KYC-gated trust signals, and a design system built from scratch rather than a template.
 
 🔗 **Live Demo:** 
-
+https://work-spot-ten.vercel.app/
 ---
 
-## Screenshots
-
-*(Add 3-4 screenshots or a short GIF here — Home page, Explore/filter page, Booking flow, and Dashboard are the strongest ones to lead with.)*
-
----
 
 ## Why This Project
 
@@ -94,7 +89,7 @@ Most "listing app" portfolio projects stop at CRUD — list an item, view an ite
 ### Installation
 
 ```bash
-git clone <this-repo-url>
+git clone [<this-repo-url>](https://github.com/sokoo69/WorkSpot)
 cd workspot
 npm install
 ```
@@ -127,12 +122,7 @@ Visit `http://localhost:3000`.
 
 ---
 
-## Demo Credentials
 
-| Role | Email | Password |
-|---|---|---|
-| User (Demo) | `demo@workspot.com` | `Demo@1234` |
-| Admin | `admin@workspot.com` | `Admin@1234` |
 
 A "Demo Login" button on the login page signs in as the demo user instantly, no typing required.
 
