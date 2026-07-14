@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
+@theme {
+  --color-ink: #16241F;
+  --color-base: #EDEFEA;
+  --color-forest: #1F4B3F;
+  --color-clay: #C4622D;
+  --color-line: #D8D3C4;
+  --color-rust: #B33A2E;
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+  --font-display: var(--font-space-grotesk);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --ink: #16241F;
+  --base: #EDEFEA;
+  --forest: #1F4B3F;
+  --clay: #C4622D;
+  --line: #D8D3C4;
+  --rust: #B33A2E;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--base);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+/* Accessibility pass */
+*:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
