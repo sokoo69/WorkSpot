@@ -89,7 +89,7 @@ Most "listing app" portfolio projects stop at CRUD — list an item, view an ite
 ### Installation
 
 ```bash
-git clone [<this-repo-url>](https://github.com/sokoo69/WorkSpot)
+git clone https://github.com/sokoo69/WorkSpot
 cd workspot
 npm install
 ```
