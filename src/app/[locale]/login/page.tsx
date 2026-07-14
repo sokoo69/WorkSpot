@@ -143,7 +143,10 @@ export default function LoginPage() {
             className="w-full flex items-center justify-center gap-2 bg-white" 
             onClick={async () => {
               try {
-                await authClient.signIn.social({ provider: "google" });
+                await authClient.signIn.social({ 
+                  provider: "google",
+                  callbackURL: redirectUrl
+                });
               } catch (err) {
                 toast.error("Failed to sign in with Google");
               }
