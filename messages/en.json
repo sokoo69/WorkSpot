@@ -1,0 +1,73 @@
+{
+  "Navbar": {
+    "brand": "WorkSpot",
+    "search": "Search Spaces",
+    "dashboard": "Dashboard",
+    "myBookings": "My Bookings",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "Home": {
+    "heroTitle": "Find your perfect workspace in Bangladesh.",
+    "heroSubtitle": "Discover private rooms, shared desks, and meeting spaces tailored for modern professionals and teams.",
+    "exploreTitle": "Explore Spaces",
+    "bookNow": "Book Now",
+    "pricePerHour": "{price} BDT / hour"
+  },
+  "BookingWidget": {
+    "date": "Date",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "total": "Total",
+    "repeatWeekly": "Repeat weekly for 4 weeks",
+    "reserve": "Reserve for {hours} hours",
+    "processing": "Processing...",
+    "loginRedirect": "You will be redirected to login.",
+    "conflict": "This time slot overlaps with an existing reservation. Please choose a different time.",
+    "invalidTime": "End time must be after start time.",
+    "alreadyBooked": "Already Booked Times Today:"
+  },
+  "Explore": {
+    "title": "Explore Spaces",
+    "subtitle": "Find the perfect workspace for your needs.",
+    "searchPlaceholder": "Search by title or location...",
+    "categoryAll": "All Categories",
+    "noSpaces": "No spaces found",
+    "tryAdjusting": "Try adjusting your filters to see more results."
+  },
+  "SpaceDetails": {
+    "overview": "Overview",
+    "amenities": "Amenities",
+    "reviews": "Reviews",
+    "noReviews": "No reviews yet.",
+    "similarSpaces": "Similar Spaces",
+    "capacity": "Up to {count} people",
+    "views": "👀 {count} people viewed this today"
+  },
+  "Bookings": {
+    "title": "My Bookings",
+    "subtitle": "View and manage your workspace reservations.",
+    "noBookings": "No bookings yet",
+    "explore": "Explore Spaces",
+    "total": "{amount} BDT",
+    "messageOwner": "Message Owner",
+    "cancel": "Cancel",
+    "statusConfirmed": "Confirmed",
+    "statusPending": "Pending",
+    "statusCancelled": "Cancelled"
+  },
+  "Auth": {
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Sign in to your account to continue.",
+    "registerTitle": "Create an Account",
+    "registerSubtitle": "Join WorkSpot to book spaces and manage reservations.",
+    "email": "Email Address",
+    "password": "Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "loginBtn": "Sign In",
+    "registerBtn": "Sign Up",
+    "noAccount": "Don't have an account? Sign up",
+    "hasAccount": "Already have an account? Sign in"
+  }
+}
