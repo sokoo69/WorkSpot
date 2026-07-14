@@ -75,7 +75,7 @@ export function Hero() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search by location, area, or workspace name..."
-            className="w-full h-14 pl-12 pr-[160px] sm:pr-[180px] text-ellipsis rounded-md border border-[var(--line)] bg-white text-[var(--ink)] focus:outline-none focus:ring-2 focus:ring-[var(--forest)] focus:border-transparent text-sm sm:text-base shadow-sm"
+            className="w-full h-14 pl-12 pr-[160px] sm:pr-[180px] text-ellipsis rounded-md border border-[var(--line)] bg-white text-[var(--ink)] placeholder:text-[var(--ink)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--forest)] focus:border-transparent text-sm sm:text-base shadow-sm"
           />
           <Button 
             type="submit" 
