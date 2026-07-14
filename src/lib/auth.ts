@@ -12,6 +12,7 @@ const db = client.db();
 
 export const auth = betterAuth({
   database: mongodbAdapter(db),
+  trustedOrigins: ["https://work-spot-ten.vercel.app"],
   emailAndPassword: {
     enabled: true,
   },
