@@ -30,7 +30,7 @@ export function Hero() {
   const gridCells = Array.from({ length: 12 });
 
   return (
-    <section className="relative w-full h-[65vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-[var(--base)] border-b border-[var(--line)]">
+    <section className="relative w-full h-auto min-h-[450px] py-20 md:py-0 md:h-[65vh] md:min-h-[500px] flex items-center justify-center overflow-hidden bg-[var(--base)] border-b border-[var(--line)]">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -56,7 +56,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="relative z-10 w-full px-4 flex flex-col items-center mt-8">
+      <div className="relative z-10 w-full px-4 flex flex-col items-center mt-4 md:mt-8">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="font-display font-bold text-5xl md:text-7xl tracking-tighter text-[var(--ink)] mb-6 drop-shadow-sm">
             {t("heroTitle")}
@@ -74,15 +74,16 @@ export function Hero() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by location, area, or workspace name..."
-            className="w-full h-14 pl-12 pr-[160px] sm:pr-[180px] text-ellipsis rounded-md border border-[var(--line)] bg-white text-[var(--ink)] placeholder:text-[var(--ink)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--forest)] focus:border-transparent text-sm sm:text-base shadow-sm"
+            placeholder="Search location or space..."
+            className="w-full h-14 pl-11 pr-[100px] sm:pr-[160px] text-ellipsis rounded-md border border-[var(--line)] bg-white text-[var(--ink)] placeholder:text-[var(--ink)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--forest)] focus:border-transparent text-sm sm:text-base shadow-sm"
           />
           <Button 
             type="submit" 
             size="lg" 
-            className="absolute right-1 top-1 bottom-1 h-12 z-10"
+            className="absolute right-1 top-1 bottom-1 h-12 z-10 px-4 sm:px-8"
           >
-            Explore Spaces
+            <span className="hidden sm:inline">Explore Spaces</span>
+            <span className="sm:hidden">Search</span>
           </Button>
         </form>
       </div>

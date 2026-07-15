@@ -203,10 +203,10 @@ export function DashboardClient({ role, session }: { role: string, session?: any
             Platform Administration
           </h2>
           
-          <div className="flex gap-2 mb-6 border-b border-[var(--line)]">
+          <div className="flex gap-2 mb-6 border-b border-[var(--line)] overflow-x-auto pb-1 scrollbar-hide">
             <button 
               onClick={() => setActiveTab("overview")}
-              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors ${
+              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors shrink-0 ${
                 activeTab === "overview" ? "border-[var(--forest)] text-[var(--forest)]" : "border-transparent text-[var(--ink)]/50 hover:text-[var(--ink)]"
               }`}
             >
@@ -214,7 +214,7 @@ export function DashboardClient({ role, session }: { role: string, session?: any
             </button>
             <button 
               onClick={() => setActiveTab("users")}
-              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 ${
+              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 shrink-0 ${
                 activeTab === "users" ? "border-[var(--forest)] text-[var(--forest)]" : "border-transparent text-[var(--ink)]/50 hover:text-[var(--ink)]"
               }`}
             >
@@ -222,7 +222,7 @@ export function DashboardClient({ role, session }: { role: string, session?: any
             </button>
             <button 
               onClick={() => setActiveTab("spaces")}
-              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 ${
+              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 shrink-0 ${
                 activeTab === "spaces" ? "border-[var(--forest)] text-[var(--forest)]" : "border-transparent text-[var(--ink)]/50 hover:text-[var(--ink)]"
               }`}
             >
@@ -230,7 +230,7 @@ export function DashboardClient({ role, session }: { role: string, session?: any
             </button>
             <button 
               onClick={() => setActiveTab("verification")}
-              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 ${
+              className={`px-4 py-2 font-bold text-sm uppercase tracking-wider border-b-2 transition-colors flex items-center gap-2 shrink-0 ${
                 activeTab === "verification" ? "border-[var(--forest)] text-[var(--forest)]" : "border-transparent text-[var(--ink)]/50 hover:text-[var(--ink)]"
               }`}
             >
